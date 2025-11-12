@@ -79,10 +79,27 @@ const getRensefisk = document.getElementById("rensefisk");
 const soundBlob = new Audio();
 soundBlob.src = "sound/blob.wav";
 
+//havfrue tale
+const kuglelyd = new Audio();
+kuglelyd.src = "sound/kuglefisk.mp3";
+const nemolyd = new Audio();
+nemolyd.src = "sound/klovnefisk.mp3";
+const dorylyd = new Audio();
+dorylyd.src = "sound/paletkirurg.mp3";
+const gullyd = new Audio();
+gullyd.src = "sound/gulfisk.mp3";
+const moolyd = new Audio();
+moolyd.src = "sound/mooriskidol.mp3";
+const stribelyd = new Audio();
+stribelyd.src = "sound/rensefisk.mp3";
+const sostjernelyd = new Audio();
+sostjernelyd.src = "sound/sostjerne.mp3";
+
 // få lydene til at fungere når man trykker på fisk
 if (getNemo) {
   getNemo.addEventListener("click", () => {
     soundBlob.play();
+    nemolyd.play();
     soundBlob.currentTime = 0;
   });
 }
@@ -90,6 +107,7 @@ if (getNemo) {
 if (getDory) {
   getDory.addEventListener("click", () => {
     soundBlob.play();
+    dorylyd.play();
     soundBlob.currentTime = 0;
   });
 }
@@ -97,6 +115,7 @@ if (getDory) {
 if (getKuglefisk) {
   getKuglefisk.addEventListener("click", () => {
     soundBlob.play();
+    kuglelyd.play();
     soundBlob.currentTime = 0;
   });
 }
@@ -104,6 +123,7 @@ if (getKuglefisk) {
 if (getYellowFish) {
   getYellowFish.addEventListener("click", () => {
     soundBlob.play();
+    gullyd.play();
     soundBlob.currentTime = 0;
   });
 }
@@ -111,6 +131,7 @@ if (getYellowFish) {
 if (getMoorishl) {
   getMoorishl.addEventListener("click", () => {
     soundBlob.play();
+    moolyd.play();
     soundBlob.currentTime = 0;
   });
 }
@@ -118,6 +139,7 @@ if (getMoorishl) {
 if (getRensefisk) {
   getRensefisk.addEventListener("click", () => {
     soundBlob.play();
+    stribelyd.play();
     soundBlob.currentTime = 0;
   });
 }
@@ -216,7 +238,7 @@ if (sun && scene) {
 }
 
 // lille bevægelse af havfrue
-const mermaid = document.querySelector(".mermaid");
+const mermaid = document.getElementById("mermaid");
 
 function randomMove() {
   const randomY = Math.random() * 40 + 30; // procent af højden

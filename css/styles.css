@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 :root {
-  --font-body: "Poppins", sans-serif;
-  /* Farver */
-  --color-sky-top: #a6d8ff;
-  --color-sky-mid: #ffffff;
-  --color-sky-bot: #ffffff;
-  --color-night: #222833;
-  --color-sun: #ffffff;
-
   /* Billede størrelser (px) */
   --sun-size: 100px;
   --fish-w: 200px;
@@ -53,7 +45,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-body);
 }
 
 /* ---------------------------------------------------------
@@ -365,16 +356,14 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
-.mermaid {
+*/
+.girl {
   position: absolute;
-  bottom: 40%;
-  left: 0;
-  width: 150px;
   animation: swim 6s ease-in-out infinite,
     tail 1s ease-in-out infinite alternate;
-}*/
-/* lille hale bevægelse
+}
+
+/* lille hale bevægelse */
 @keyframes tail {
   from {
     rotate: 0deg;
@@ -382,4 +371,4 @@ body {
   to {
     rotate: 5deg;
   }
-}*/
+}
